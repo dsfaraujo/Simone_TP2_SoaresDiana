@@ -16,7 +16,7 @@ class SimoneBrain {
     var userTurnToPlay: Bool!
     var scoreKeeperCounter: Int!
     var theScoreKeeper = ""
-    var randomButtonChooser: UIButton
+    var randomButtonChooser: UIButton!
     
     //-------------------
     //Fonction that gets a random number
@@ -26,22 +26,22 @@ class SimoneBrain {
         let randomNumber = arc4random_uniform(to - from + 1) + from
         return Int(randomNumber)
     }
-   //-------------------
+    //-------------------
     //Fonction to start the game and initialize "colorTracker" to 0
     func startGame(_ arrOfRandomButtons: [UIButton]) {
         //--------------
         colorTracker = 0
         //--------------
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false, {_ in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in
             self.buttonAlphaManager(arrOfRandomButtons)
+        }
         //--------------
-        })
-    
+        
     }
     //-------------------
     //Fonction
     func buttonAlphaManager(_ arrOfRandomButtons: [UIButton]) {
-      //--------------
+        //--------------
         if colorTracker < arrOfRandomButtons.count{
             //--------------
             userTurnToPlay = false
@@ -50,9 +50,10 @@ class SimoneBrain {
             randomButtonChooser = arrOfRandomButtons[colorTracker]
             colorTracker! += 1
             //--------------
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, {_ in
-                self.resetAlphaForButtons(arrOfRandomButtons)
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
+                self.buttonAlphaManager(arrOfRandomButtons)
             }
+            
         }
         else {
             //--------------
@@ -63,14 +64,16 @@ class SimoneBrain {
     
     //*********************************
     func resetAlphaForButtons(_ arrOfRandomButtons: [UIButton]){
+        //--------------
         randomButtonChooser.alpha = 1.0
+        //--------------
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in
+            self.buttonAlphaManager(arrOfRandomButtons)
+        }
         
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, {_ in
-            self.buttonAlphaForButtons(arrOfRandomButtons)
-
-            
+        
+        
     }
-    
     //*********************************
     var scoreKeeper: String? {
         get {
@@ -81,5 +84,4 @@ class SimoneBrain {
         }
         
     }
-    
 }
