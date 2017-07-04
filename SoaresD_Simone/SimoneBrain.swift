@@ -48,6 +48,7 @@ class SimoneBrain {
             scoreKeeperCounter = 0
             scoreKeeper = ""
             randomButtonChooser = arrOfRandomButtons[colorTracker]
+            randomButtonChooser.alpha = 0.2
             colorTracker! += 1
             //--------------
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
