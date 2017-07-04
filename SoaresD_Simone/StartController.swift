@@ -11,9 +11,12 @@ import UIKit
 class StartController: UIViewController {
     
     
+    @IBOutlet weak var highScoreField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        highScoreField.text = "HIGH SCORE : \(SingletonShared.singletonSharedInstance.highscore)"
       
     }
 
