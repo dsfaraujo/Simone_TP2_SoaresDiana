@@ -11,22 +11,22 @@ import UIKit
 
 class SimoneBrain {
     
-    //*********************************
+    //-------------------
     var colorTracker: Int!
     var userTurnToPlay: Bool!
     var scoreKeeperCounter: Int!
     var theScoreKeeper = ""
     var randomButtonChooser: UIButton
     
-    //*********************************
+    //-------------------
     //Fonction that gets a random number
-    func getRandomNumber( from f: Int, to t: Int) -> Int {
+    func getRandomNumber(from f: Int, to t: Int) -> Int {
         let from = UInt32(f)
         let to = UInt32 (t)
         let randomNumber = arc4random_uniform(to - from + 1) + from
         return Int(randomNumber)
     }
-    //*********************************
+   //-------------------
     //Fonction to start the game and initialize "colorTracker" to 0
     func startGame(_ arrOfRandomButtons: [UIButton]) {
         //--------------
@@ -38,7 +38,7 @@ class SimoneBrain {
         })
     
     }
-    //*********************************
+    //-------------------
     //Fonction
     func buttonAlphaManager(_ arrOfRandomButtons: [UIButton]) {
       //--------------
