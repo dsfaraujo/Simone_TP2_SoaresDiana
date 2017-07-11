@@ -121,6 +121,9 @@
                                             <constraint firstAttribute="width" secondItem="upn-cV-65J" secondAttribute="height" multiplier="115:26" id="RDB-eE-AL2"/>
                                         </constraints>
                                         <state key="normal" image="reset.png"/>
+                                        <connections>
+                                            <action selector="resetHighscore:" destination="LBa-WO-LWv" eventType="touchUpInside" id="Rhx-Aa-uUc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
