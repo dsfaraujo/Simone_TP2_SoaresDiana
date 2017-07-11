@@ -95,10 +95,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-xj-r5p">
-                                <rect key="frame" x="85.5" y="264" width="204" height="139"/>
+                                <rect key="frame" x="86" y="264" width="204" height="139"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhs-Fx-NiP">
-                                        <rect key="frame" x="23.5" y="0.0" width="157" height="27"/>
+                                        <rect key="frame" x="23" y="0.0" width="157" height="27"/>
                                         <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="24"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -312,12 +312,12 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCk-Ek-XYR">
-                                <rect key="frame" x="172" y="513" width="30" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCk-Ek-XYR">
+                                <rect key="frame" x="155" y="490" width="64" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="JF2-gf-nIe"/>
+                                    <constraint firstAttribute="width" constant="64" id="JF2-gf-nIe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -328,7 +328,7 @@
                             <constraint firstItem="w3x-E5-SHK" firstAttribute="centerY" secondItem="2mv-hA-Elm" secondAttribute="centerY" constant="-70.5" id="8Lb-Ap-c5s">
                                 <variation key="heightClass=compact" constant="37.5"/>
                             </constraint>
-                            <constraint firstItem="T21-1j-RRD" firstAttribute="top" secondItem="CCk-Ek-XYR" secondAttribute="bottom" constant="124" id="EWj-EP-6lb"/>
+                            <constraint firstItem="T21-1j-RRD" firstAttribute="top" secondItem="CCk-Ek-XYR" secondAttribute="bottom" constant="102" id="EWj-EP-6lb"/>
                             <constraint firstItem="CCk-Ek-XYR" firstAttribute="centerY" secondItem="J2h-gS-3GT" secondAttribute="centerY" id="NwK-Nd-ZdH"/>
                             <constraint firstItem="T21-1j-RRD" firstAttribute="top" secondItem="J2h-gS-3GT" secondAttribute="bottom" constant="68" id="OeL-xP-gyr"/>
                             <constraint firstItem="ZZL-TC-BBr" firstAttribute="centerX" secondItem="2mv-hA-Elm" secondAttribute="centerX" id="OiU-AB-UC5"/>
@@ -454,13 +454,13 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XPc-cs-G2M">
-                                <rect key="frame" x="85.5" y="264" width="204" height="139"/>
+                                <rect key="frame" x="86" y="264" width="204" height="139"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T7E-2M-7Bn">
-                                        <rect key="frame" x="57" y="0.0" width="90.5" height="27"/>
+                                        <rect key="frame" x="56" y="0.0" width="91" height="27"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCE-bu-aO0">
-                                                <rect key="frame" x="0.0" y="0.0" width="90.5" height="27"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="27"/>
                                                 <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="24"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -477,6 +477,9 @@
                                                     <constraint firstAttribute="width" constant="204" id="gOm-Fp-oHb"/>
                                                 </constraints>
                                                 <state key="normal" image="high.png"/>
+                                                <connections>
+                                                    <segue destination="LBa-WO-LWv" kind="presentation" id="4ZH-bk-qWr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -494,6 +497,9 @@
                                                     <constraint firstAttribute="width" constant="204" id="fZQ-OX-u4A"/>
                                                 </constraints>
                                                 <state key="normal" image="new.png"/>
+                                                <connections>
+                                                    <segue destination="wNr-6D-H7f" kind="presentation" id="zCK-FC-rUJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -514,6 +520,9 @@
                             <constraint firstItem="a9V-bi-nnc" firstAttribute="top" secondItem="MYq-Ru-idq" secondAttribute="top" id="lMG-wj-R1Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="vCE-bu-aO0" id="lGo-dC-W6e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfz-zV-8Ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -531,4 +540,7 @@
         <image name="ring.png" width="267" height="267"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zCK-FC-rUJ"/>
+    </inferredMetricsTieBreakers>
 </document>

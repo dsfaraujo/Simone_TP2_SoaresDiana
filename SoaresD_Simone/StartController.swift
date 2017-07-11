@@ -15,8 +15,8 @@ class StartController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        highScoreField.text = "HIGH SCORE : \(SingletonShared.singletonSharedInstance.highscore)"
+        SingletonShared.singletonSharedInstance.manageScore()
+        highScoreField.text = "HIGHSCORE : \(SingletonShared.singletonSharedInstance.highscore!)"
       
     }
 
