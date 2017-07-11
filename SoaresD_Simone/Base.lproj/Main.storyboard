@@ -95,16 +95,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-xj-r5p">
-                                <rect key="frame" x="86" y="264" width="204" height="139"/>
+                                <rect key="frame" x="86" y="262" width="204" height="143.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhs-Fx-NiP">
-                                        <rect key="frame" x="23" y="0.0" width="157" height="27"/>
-                                        <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="24"/>
+                                        <rect key="frame" x="10.5" y="0.0" width="183" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="28"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIo-be-0Qc">
-                                        <rect key="frame" x="0.0" y="37" width="204" height="46"/>
+                                        <rect key="frame" x="0.0" y="41.5" width="204" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="204" id="JpU-9k-LLh"/>
                                             <constraint firstAttribute="width" secondItem="wIo-be-0Qc" secondAttribute="height" multiplier="537:121" id="Ran-ss-jYa"/>
@@ -115,7 +115,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upn-cV-65J">
-                                        <rect key="frame" x="0.0" y="93" width="204" height="46"/>
+                                        <rect key="frame" x="0.0" y="97.5" width="204" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="204" id="IJP-uk-JNP"/>
                                             <constraint firstAttribute="width" secondItem="upn-cV-65J" secondAttribute="height" multiplier="115:26" id="RDB-eE-AL2"/>
@@ -312,12 +312,12 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCk-Ek-XYR">
-                                <rect key="frame" x="155" y="490" width="64" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCk-Ek-XYR">
+                                <rect key="frame" x="155" y="491" width="64" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="JF2-gf-nIe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -328,7 +328,7 @@
                             <constraint firstItem="w3x-E5-SHK" firstAttribute="centerY" secondItem="2mv-hA-Elm" secondAttribute="centerY" constant="-70.5" id="8Lb-Ap-c5s">
                                 <variation key="heightClass=compact" constant="37.5"/>
                             </constraint>
-                            <constraint firstItem="T21-1j-RRD" firstAttribute="top" secondItem="CCk-Ek-XYR" secondAttribute="bottom" constant="102" id="EWj-EP-6lb"/>
+                            <constraint firstItem="T21-1j-RRD" firstAttribute="top" secondItem="CCk-Ek-XYR" secondAttribute="bottom" constant="101" id="EWj-EP-6lb"/>
                             <constraint firstItem="CCk-Ek-XYR" firstAttribute="centerY" secondItem="J2h-gS-3GT" secondAttribute="centerY" id="NwK-Nd-ZdH"/>
                             <constraint firstItem="T21-1j-RRD" firstAttribute="top" secondItem="J2h-gS-3GT" secondAttribute="bottom" constant="68" id="OeL-xP-gyr"/>
                             <constraint firstItem="ZZL-TC-BBr" firstAttribute="centerX" secondItem="2mv-hA-Elm" secondAttribute="centerX" id="OiU-AB-UC5"/>
@@ -454,21 +454,21 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XPc-cs-G2M">
-                                <rect key="frame" x="86" y="264" width="204" height="139"/>
+                                <rect key="frame" x="86" y="262" width="204" height="143.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T7E-2M-7Bn">
-                                        <rect key="frame" x="56" y="0.0" width="91" height="27"/>
+                                        <rect key="frame" x="49.5" y="0.0" width="105.5" height="31.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCE-bu-aO0">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="27"/>
-                                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="24"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="31.5"/>
+                                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="28"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mYd-R7-LIs">
-                                        <rect key="frame" x="0.0" y="37" width="204" height="46"/>
+                                        <rect key="frame" x="0.0" y="41.5" width="204" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnE-vu-CXP">
                                                 <rect key="frame" x="0.0" y="0.0" width="204" height="46"/>
@@ -483,12 +483,11 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="dnE-vu-CXP" firstAttribute="centerY" secondItem="mYd-R7-LIs" secondAttribute="centerY" id="29p-3l-7a2"/>
                                             <constraint firstItem="dnE-vu-CXP" firstAttribute="centerX" secondItem="mYd-R7-LIs" secondAttribute="centerX" id="WfG-JG-GoJ"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9eA-88-WA5">
-                                        <rect key="frame" x="0.0" y="93" width="204" height="46"/>
+                                        <rect key="frame" x="0.0" y="97.5" width="204" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpK-fH-Z8m">
                                                 <rect key="frame" x="0.0" y="0.0" width="204" height="46"/>

@@ -21,25 +21,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_120.png" translatesAutoresizingMaskIntoConstraints="NO" id="tej-vv-RZy">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-v5-I3k">
+                                <rect key="frame" x="60" y="99" width="255" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="HcJ-lH-r7w"/>
+                                    <constraint firstAttribute="width" constant="255" id="J7L-Oa-gh8"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-v5-I3k">
-                                <rect key="frame" x="28" y="123" width="319" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="tej-vv-RZy">
+                                <rect key="frame" x="140.5" y="206" width="94" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="Ase-47-5OW"/>
+                                    <constraint firstAttribute="height" constant="94" id="Y5I-a3-kDn"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tej-vv-RZy" firstAttribute="centerX" secondItem="18y-a0-RRF" secondAttribute="centerX" id="01m-LZ-8aJ"/>
+                            <constraint firstItem="tej-vv-RZy" firstAttribute="top" secondItem="Txd-v5-I3k" secondAttribute="bottom" constant="8" symbolic="YES" id="KAA-bU-m7t"/>
+                            <constraint firstItem="Txd-v5-I3k" firstAttribute="top" secondItem="fe0-IP-xv4" secondAttribute="bottom" constant="79" id="R2P-2a-be9"/>
+                            <constraint firstItem="Txd-v5-I3k" firstAttribute="centerX" secondItem="18y-a0-RRF" secondAttribute="centerX" id="T7G-B0-NQa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yw-oO-mXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-551.20000000000005" y="-261.31934032983509"/>
+            <point key="canvasLocation" x="-297" y="-378"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon_120.png" width="120" height="120"/>
+        <image name="1024.png" width="1024" height="1024"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>
 </document>
