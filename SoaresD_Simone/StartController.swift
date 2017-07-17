@@ -15,9 +15,16 @@ class StartController: UIViewController {
         super.viewDidLoad()
         
         let savedScore = SingletonShared.singletonSharedInstance.savedHighScore.object(forKey: "score")
-        highScoreField.text = "HIGHSCORE : \(String(describing: savedScore))"
+        highScoreField.text = "HIGHSCORE : \(String(describing: savedScore!))"
       
     }
+    //------------------------------
+    @IBAction func goToWebPage(_ sender: UIButton) {
+        if let url = NSURL(string: "http://www.mariogeneau.com"){
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+    }
+    
     //------------------------------
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,5 +36,6 @@ class StartController: UIViewController {
         SingletonShared.singletonSharedInstance.resetHighScore()
     }
     //------------------------------
+    
 }
 
