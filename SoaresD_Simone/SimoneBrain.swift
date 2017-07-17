@@ -19,9 +19,12 @@ class SimoneBrain {
     var colorToHighlight: UIButton!
     var arrCopyOfRandomColorsToCompare: [UIButton]!
     var scoreKeeperCounter: Int!
+    var timerLabel: UILabel!
+    
     //------------------------------
-    init(gameColors: [UIButton]) {
+    init(gameColors: [UIButton], timerLabel: UILabel) {
         self.gameColors = gameColors
+        self.timerLabel = timerLabel
     }
     //------------------------------
     //Fonction that gets a random number
@@ -41,6 +44,7 @@ class SimoneBrain {
         }
     }
     //------------------------------
+    var aTimer: Timer!
     func gameColorsToHighlightManager() {
         //--------------
         if colorIndex < arrRandomColors.count{
@@ -57,6 +61,14 @@ class SimoneBrain {
         }
         else {
             userTurnToPlay = true
+            var sec = 30
+            aTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true){_ in
+                self.timerLabel.text = "YOUR TURN : \(sec) s"
+                if sec == 0{
+                    self.aTimer.invalidate()
+                }
+                sec-=1
+            }
         }
     }
     //------------------------------
