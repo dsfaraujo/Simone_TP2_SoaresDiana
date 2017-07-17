@@ -58,6 +58,7 @@ class SimoneBrain {
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
                 self.resetAlphaForColors()
             }
+            
         }
         else {
             userTurnToPlay = true
