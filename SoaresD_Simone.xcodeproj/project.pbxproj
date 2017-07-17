@@ -30,7 +30,7 @@
 		9B5FCC601F0AD2A60083F2FC /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5FCC5E1F0AD2A60083F2FC /* reset.png */; };
 		9B5FCC611F0AD2A60083F2FC /* icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5FCC5F1F0AD2A60083F2FC /* icon_120.png */; };
 		9B5FCC651F0AE13A0083F2FC /* SimoneBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5FCC641F0AE13A0083F2FC /* SimoneBrain.swift */; };
-		9B5FCC671F0AE9600083F2FC /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5FCC661F0AE9600083F2FC /* GameController.swift */; };
+		9B77FBFF1F1D5030008BAC33 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B77FBFE1F1D5030008BAC33 /* GameController.swift */; };
 		9BB38B1A1EEF08EC0035911F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB38B191EEF08EC0035911F /* AppDelegate.swift */; };
 		9BB38B1C1EEF08EC0035911F /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB38B1B1EEF08EC0035911F /* StartController.swift */; };
 		9BB38B1F1EEF08EC0035911F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB38B1D1EEF08EC0035911F /* Main.storyboard */; };
@@ -70,7 +70,7 @@
 		9B5FCC5E1F0AD2A60083F2FC /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset.png; path = images/reset.png; sourceTree = "<group>"; };
 		9B5FCC5F1F0AD2A60083F2FC /* icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_120.png; path = images/icon_120.png; sourceTree = "<group>"; };
 		9B5FCC641F0AE13A0083F2FC /* SimoneBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimoneBrain.swift; sourceTree = "<group>"; };
-		9B5FCC661F0AE9600083F2FC /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameController.swift; path = ../GameController.swift; sourceTree = "<group>"; };
+		9B77FBFE1F1D5030008BAC33 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		9BB38B161EEF08EB0035911F /* SoaresD_Simone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoaresD_Simone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB38B191EEF08EC0035911F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB38B1B1EEF08EC0035911F /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			children = (
 				9BB38B2B1EEF09810035911F /* Support */,
 				9BB38B1B1EEF08EC0035911F /* StartController.swift */,
-				9B5FCC661F0AE9600083F2FC /* GameController.swift */,
+				9B77FBFE1F1D5030008BAC33 /* GameController.swift */,
 				9B4F06271F0C288B00EDD4B4 /* WrongController.swift */,
 				9B5FCC641F0AE13A0083F2FC /* SimoneBrain.swift */,
 				9B4F06291F0C290F00EDD4B4 /* SingletonShared.swift */,
@@ -295,10 +295,10 @@
 			files = (
 				9B4F062A1F0C290F00EDD4B4 /* SingletonShared.swift in Sources */,
 				9BB38B1C1EEF08EC0035911F /* StartController.swift in Sources */,
-				9B5FCC671F0AE9600083F2FC /* GameController.swift in Sources */,
 				9BB38B1A1EEF08EC0035911F /* AppDelegate.swift in Sources */,
 				9B4F06281F0C288B00EDD4B4 /* WrongController.swift in Sources */,
 				9B5FCC651F0AE13A0083F2FC /* SimoneBrain.swift in Sources */,
+				9B77FBFF1F1D5030008BAC33 /* GameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
